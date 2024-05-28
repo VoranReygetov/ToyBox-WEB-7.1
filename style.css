@@ -1,0 +1,98 @@
+:root{
+    --background-color: #1B1B1B;
+    --primary-text-color: #D7D7D7;
+    --form-background-color: #222222;
+    --field-backgound-color: #4F4F4F;
+    --button-background-color: #AD0000;
+    --button-hover-color: #e30000;
+    --form-placeholder-color: #858585;
+}
+body{
+    background-color: var(--background-color);
+    color: var(--primary-text-color);
+    font-family: Inter, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, sans-serif;
+}
+html, body, div, span, h1, h2, h3, h4, p, a, li, table, th, td, ol, ul, img, button{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+ol, ul{
+    list-style: none;
+}
+
+.page-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-wrapper{
+    margin: 60px auto;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--form-background-color);
+    padding: 24px 48px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.form-wrapper h1{
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+.form-wrapper label{
+    font-size: 0.75rem;
+    text-align: left;
+    margin-top: 8px;
+}
+
+.feedback-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field {
+    background-color: var(--field-backgound-color);
+    border: 2px solid transparent;
+    border-radius: 12px;
+    box-sizing: border-box; 
+    min-height: 2.5rem;
+    padding: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    max-width: 100%;
+}
+
+.form-field textarea {
+    min-height: 5rem;
+}
+
+.form-field::placeholder {
+    color: var(--form-placeholder-color);
+}
+
+.form-field:hover {
+    border-color: #878787;
+}
+
+.form-field:focus {
+    border-color: #afafaf;
+}
+
+.btn-submit{
+    background-color: var(--button-background-color);
+    color: var(--primary-text-color);
+    align-self: end;
+    box-sizing: content-box;
+    padding: 12px 28px;
+    border-radius: 12px;
+    margin-top: 24px;
+    font-size: 1.125rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover{
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: var(--button-hover-color);
+}
